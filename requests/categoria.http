@@ -1,0 +1,23 @@
+### list categoria
+GET http://localhost:3000/Categoria
+
+### get categoria
+GET http://localhost:3000/Categoria/1
+
+### create categoria
+POST http://localhost:3000/categoria
+Content-Type: application/json
+
+{
+    "nome":"Tenis"
+}
+
+### update categoria
+PATCH  http://localhost:3000/categoria/1
+Content-Type: application/json
+
+{
+    "nome":"Hortaliças"
+}
+### delete categoria
+DELETE http://localhost:3000/categoria/1

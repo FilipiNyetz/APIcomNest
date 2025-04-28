@@ -1,0 +1,29 @@
+### list pagamentos
+GET http://localhost:3000/pagamentos
+
+### get pagamentos
+GET http://localhost:3000/pagamentos/1
+
+### create pagamentos
+POST http://localhost:3000/pagamentos
+Content-Type: application/json
+
+{
+  "forma_pagamento":"Credito",
+  "status": "Aprovado",
+  "valor": 45.00,
+  "pedidoId":2
+}
+
+### update pagamentos
+PATCH  http://localhost:3000/pagamentos/1
+Content-Type: application/json
+
+{
+  "forma_pagamento":"Crédito",
+  "status": "Cancelado",
+  "valor": 45.00,
+  "pedidoId":1
+}
+### delete pagamentos
+DELETE http://localhost:3000/pagamentos/1

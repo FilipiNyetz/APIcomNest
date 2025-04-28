@@ -1,0 +1,34 @@
+### list pedidos
+GET http://localhost:3000/pedidos
+
+### get pedidos
+GET http://localhost:3000/pedidos/1
+
+### create pedidos
+POST http://localhost:3000/pedidos
+Content-Type: application/json
+
+{
+  "data": "2025-04-27",
+  "status": "Em andamento",
+  "itens": ["Alface", "Brocolis"],
+  "clienteId": 3,
+  "produtoIds": [1, 2],
+  "valor": 50.00
+}
+
+### update pedidos
+PATCH  http://localhost:3000/pedidos/1
+Content-Type: application/json
+
+{
+  "data": "2025-04-27",
+  "status": "Em andamento",
+  "itens": ["Alface", "Laranja"],
+  "clienteId": 2,
+  "produtoIds": [1, 2],
+  "valor": 50.00
+}
+
+### delete pedidos
+DELETE http://localhost:3000/pedidos/1

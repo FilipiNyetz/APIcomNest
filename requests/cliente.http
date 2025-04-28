@@ -1,0 +1,31 @@
+### list Clientes
+GET http://localhost:3000/Clientes
+
+### get Clientes
+GET http://localhost:3000/Clientes/3
+
+### create Clientess
+POST http://localhost:3000/Clientes
+Content-Type: application/json
+
+{
+    "nome":"Gabriel",
+    "cpf":"999999999",
+    "telefone":"999999999",
+    "endereco":"Catolica",
+    "email":"Gabriel@gmail.com"
+}
+
+### update Clientes
+PATCH  http://localhost:3000/clientes/2
+Content-Type: application/json
+
+{
+    "nome":"Filipi",
+    "cpf":"02954349107",
+    "telefone":"999999999",
+    "endereco":"Casa 1",
+    "email":"romao@gmail.com"
+}
+### delete Clientes
+DELETE http://localhost:3000/Clientes/1

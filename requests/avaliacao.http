@@ -1,0 +1,27 @@
+### list avaliacao-loja
+GET http://localhost:3000/avaliacao-loja
+
+### get avaliacao-loja
+GET http://localhost:3000/avaliacao-loja/1
+
+### create avaliacao-loja
+POST http://localhost:3000/avaliacao-loja
+Content-Type: application/json
+
+{
+    "nota":5,
+    "descricao":"Péssimo",
+    "agricultorId":1
+}
+
+### update avaliacao-loja
+PATCH  http://localhost:3000/avaliacao-loja/1
+Content-Type: application/json
+
+{
+    "nota":5,
+    "descricao":"Ótimo",
+    "agricultorId":1
+}
+### delete avaliacao-loja
+DELETE http://localhost:3000/avaliacao-loja/1

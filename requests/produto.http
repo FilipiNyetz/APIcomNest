@@ -1,0 +1,33 @@
+### list Produto
+GET http://localhost:3000/Produto
+
+### get Produto
+GET http://localhost:3000/Produto/1
+
+### create Produto
+POST http://localhost:3000/Produto
+Content-Type: application/json
+
+{
+    "nome":"Brocolis",
+    "categoriaId":1,
+    "preco":7,
+    "quantidade":99,
+    "descricao":"Brocolis Verde",
+    "estoqueId":1
+}
+
+### update Produto
+PATCH  http://localhost:3000/Produto/1
+Content-Type: application/json
+
+{
+    "nome":"Alface",
+    "categoriaId":1,
+    "preco":5,
+    "quantidade":50,
+    "descricao":"Alface verde",
+    "estoqueId":1
+}
+### delete Produto
+DELETE http://localhost:3000/Produto/1

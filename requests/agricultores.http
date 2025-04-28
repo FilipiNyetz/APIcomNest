@@ -1,0 +1,32 @@
+### list agricultores
+GET http://localhost:3000/agricultores
+
+###get agricultor
+GET http://localhost:3000/agricultores/1
+
+### Creat agricultor
+POST http://localhost:3000/agricultores
+Content-Type: application/json
+
+{
+  "nome": "Agricultor Gabriel",
+  "cnpj": "00000000000000",
+  "endereco": "Catolica",
+  "telefone": "99999999999",
+  "produtoIds": [1]
+}
+
+
+###Update agricultor
+
+PATCH http://localhost:3000/agricultores/1
+{
+    "nome": "João da Silva Atualizado",
+    "endereco": "Rua 456, Bairro Norte",
+    "telefone": "(11) 98888-8888",
+    "produtoIds": [2, 3] // IDs dos novos produtos
+}
+
+###Delete agricultor
+DELETE http://localhost:3000/agricultores/1
+

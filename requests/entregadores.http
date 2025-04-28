@@ -1,0 +1,29 @@
+### list Entregadores
+GET http://localhost:3000/Entregadores
+
+### get Entregadores
+GET http://localhost:3000/Entregadores/1
+
+### create Entregadores
+POST http://localhost:3000/Entregadores
+Content-Type: application/json
+
+{
+    "nome":"Paulo",
+    "telefone":"61982643446",
+    "veiculo":"CB1000",
+    "cnh":"Tipo B"
+}
+
+### update Entregadores
+PATCH  http://localhost:3000/Entregadores/1
+Content-Type: application/json
+
+{
+    "nome":"Walter",
+    "telefone":"61982643446",
+    "veiculo":"Xj",
+    "cnh":"Tipo B"
+}
+### delete Entregadores
+DELETE http://localhost:3000/Entregadores/1

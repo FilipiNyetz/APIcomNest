@@ -1,0 +1,34 @@
+### list parceira-marketing
+GET http://localhost:3000/parceiras-marketing
+
+### get parceira-marketing
+GET http://localhost:3000/parceiras-marketing/1
+
+### create parceira-marketing
+POST http://localhost:3000/parceiras-marketing
+Content-Type: application/json
+
+{
+    "cnpj":"000000000",
+    "nome":"Filipinho Divulgacoes",
+    "endereco":"Rua A",
+    "telefone": "9999999999",
+    "email":"mkt@hotmail.com",
+    "agricultorIds":[1,2]
+
+}
+
+### update parceira-marketing
+PATCH  http://localhost:3000/parceiras-marketing/1
+Content-Type: application/json
+{
+    "cnpj":"000000000",
+    "nome":"Filipinho Divulgacoes",
+    "endereco":"Rua A",
+    "telefone": "9999999999",
+    "email":"mkt@gmail.com",
+    "agricultorIds":[1,3]
+
+}
+### delete parceira-marketing
+DELETE http://localhost:3000/parceiras-marketing/1

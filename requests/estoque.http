@@ -1,0 +1,25 @@
+### list Estoque
+GET http://localhost:3000/Estoque
+
+### get Estoque
+GET http://localhost:3000/Estoque/2
+
+### create Estoque
+POST http://localhost:3000/Estoque
+Content-Type: application/json
+
+{
+    "quantidadeProdutos":10,
+    "Endereco":"Teste2"
+}
+
+### update Estoque
+PATCH  http://localhost:3000/Estoque/1
+Content-Type: application/json
+
+{
+    "quantidadeProdutos":10,
+    "Endereco":"Av. Parque Aguas"
+}
+### delete Estoque
+DELETE http://localhost:3000/Estoque/1
